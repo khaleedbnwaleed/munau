@@ -1,0 +1,6 @@
+[
+  { "id": 1, "name": "Alice Johnson", "program": "Nursing", "status": "pending" },
+  { "id": 2, "name": "Bob Smith", "program": "Medical Lab Science", "status": "approved" },
+  { "id": 3, "name": "Carol White", "program": "Health Records", "status": "pending" },
+  { "id": 4, "name": "David Brown", "program": "Nursing", "status": "rejected" }
+]

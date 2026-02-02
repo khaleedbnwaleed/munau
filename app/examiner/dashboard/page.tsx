@@ -1,6 +1,7 @@
 'use client';
 
 import { useMemo, useState, useEffect } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Button } from '@/components/ui/button';
@@ -9,25 +10,22 @@ import { Badge } from '@/components/ui/badge';
 import { Clock, FileText, CheckCircle, Users, X } from 'lucide-react';
 
 export default function ExaminerDashboard() {
-  const [markingQueue, setMarkingQueue] = useState(() => {
-    try {
-      if (typeof window !== 'undefined') {
-        const raw = localStorage.getItem('examiner.markingQueue');
-        if (raw) return JSON.parse(raw);
-      }
-    } catch (e) {}
-    return [
-      { id: 1, student: 'Alice Johnson', course: 'Anatomy', submittedAt: '2026-01-15', status: 'pending' },
-      { id: 2, student: 'Bob Smith', course: 'Physiology', submittedAt: '2026-01-14', status: 'pending' },
-      { id: 3, student: 'Carol White', course: 'Biochemistry', submittedAt: '2026-01-12', status: 'marked' },
-    ];
-  });
+  const [markingQueue, setMarkingQueue] = useState<any[]>([]);
 
   useEffect(() => {
-    try {
-      localStorage.setItem('examiner.markingQueue', JSON.stringify(markingQueue));
-    } catch (e) {}
-  }, [markingQueue]);
+    async function load() {
+      try {
+        const res = await fetch('/api/examiner/marking-queue');
+        if (res.ok) {
+          const json = await res.json();
+          setMarkingQueue(json.data || []);
+        }
+      } catch (e) {
+        console.error('[v0] load marking queue failed', e);
+      }
+    }
+    load();
+  }, []);
 
   // simple client-side guard
   const router = useRouter();
@@ -46,12 +44,40 @@ export default function ExaminerDashboard() {
   const pendingCount = useMemo(() => markingQueue.filter((m) => m.status === 'pending').length, [markingQueue]);
   const releasedCount = useMemo(() => markingQueue.filter((m) => m.status === 'marked').length, [markingQueue]);
 
-  const markScript = (id: number) => {
-    setMarkingQueue((prev) => prev.map((m) => (m.id === id ? { ...m, status: 'marked' } : m)));
+  const markScript = async (id: number) => {
+    try {
+      const res = await fetch('/api/examiner/marking-queue', {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id, status: 'marked' })
+      });
+      if (res.ok) {
+        const json = await res.json();
+        setMarkingQueue(prev => prev.map(m => (m.id === id ? json.data : m)));
+      } else {
+        alert('Failed to mark');
+      }
+    } catch (e) {
+      alert('Failed to mark');
+    }
   };
 
-  const rejectScript = (id: number) => {
-    setMarkingQueue((prev) => prev.map((m) => (m.id === id ? { ...m, status: 'rejected' } : m)));
+  const rejectScript = async (id: number) => {
+    try {
+      const res = await fetch('/api/examiner/marking-queue', {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id, status: 'rejected' })
+      });
+      if (res.ok) {
+        const json = await res.json();
+        setMarkingQueue(prev => prev.map(m => (m.id === id ? json.data : m)));
+      } else {
+        alert('Failed to reject');
+      }
+    } catch (e) {
+      alert('Failed to reject');
+    }
   };
 
   const handleLogout = () => {
@@ -67,7 +93,7 @@ export default function ExaminerDashboard() {
         <div className="flex items-center justify-between h-16 px-6">
           <div className="flex items-center gap-4">
             <Link href="/examiner/dashboard" className="flex items-center gap-2">
-              <img src="/logo.png" alt="Munau College Logo" width={36} height={36} className="rounded-lg object-cover" />
+              <Image src="/logo.png" alt="Munau College Logo" width={36} height={36} className="rounded-lg object-cover" />
               <span className="font-bold">Examiner Panel</span>
             </Link>
           </div>

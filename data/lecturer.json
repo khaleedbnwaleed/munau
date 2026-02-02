@@ -1,0 +1,15 @@
+{
+  "courses": [
+    { "id": "C-101", "title": "Nursing Science" },
+    { "id": "C-202", "title": "Health Information Management" }
+  ],
+  "rosters": {
+    "C-101": [
+      { "id": 1, "name": "Alice Johnson", "matric": "MUN/1001", "grade": null },
+      { "id": 2, "name": "Bob Smith", "matric": "MUN/1002", "grade": 75 }
+    ],
+    "C-202": [
+      { "id": 3, "name": "Carol White", "matric": "MUN/2001", "grade": null }
+    ]
+  }
+}

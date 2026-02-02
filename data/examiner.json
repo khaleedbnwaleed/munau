@@ -1,0 +1,5 @@
+[
+  { "id": 1, "student": "Alice Johnson", "course": "Anatomy", "submittedAt": "2026-01-15", "status": "pending" },
+  { "id": 2, "student": "Bob Smith", "course": "Physiology", "submittedAt": "2026-01-14", "status": "pending" },
+  { "id": 3, "student": "Carol White", "course": "Biochemistry", "submittedAt": "2026-01-12", "status": "marked" }
+]

@@ -1,6 +1,7 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
@@ -19,27 +20,6 @@ import {
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [heroStatus, setHeroStatus] = useState<'idle' | 'loaded' | 'error'>('idle');
-  const [heroFetchStatus, setHeroFetchStatus] = useState<number | null>(null);
-
-  useEffect(() => {
-    let cancelled = false;
-    // Check the public path for the image using a HEAD request to detect server errors / 404s
-    fetch('/mun.jpeg', { method: 'HEAD' })
-      .then((res) => {
-        if (cancelled) return;
-        console.log('[v0] HEAD /mun.jpeg', res.status);
-        setHeroFetchStatus(res.status);
-      })
-      .catch((err) => {
-        if (cancelled) return;
-        console.error('[v0] HEAD /mun.jpeg failed', err);
-        setHeroFetchStatus(-1);
-      });
-    return () => {
-      cancelled = true;
-    };
-  }, []);
 
   return (
     <div className="min-h-screen bg-background">
@@ -48,7 +28,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <Link href="/" className="flex items-center gap-2">
-              <img src="/logo.png" alt="Munau College Logo" className="w-15 h-15 rounded-lg object-cover" />
+              <Image src="/logo.png" alt="Munau College Logo" width={48} height={48} className="rounded-lg object-cover" />
               <span className="font-bold text-foreground hidden sm:inline">
                 Munau College of Health Sciences and Technology
               </span>
@@ -139,10 +119,8 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section
-        className="relative py-20 md:py-32 bg-cover bg-center"
-        style={{ backgroundImage: "url('/hero.png')" }}
-      >
+      <section className="relative py-20 md:py-32 bg-cover bg-center">
+        <Image src="/hero.png" alt="Hero background" fill className="absolute inset-0 -z-20 object-cover" priority />
         {/* Overlay */}
         <div className="absolute inset-0 -z-10">
           {/* Darker overlay for better contrast */}

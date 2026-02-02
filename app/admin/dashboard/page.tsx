@@ -59,22 +59,46 @@ export default function AdminDashboard() {
   const router = useRouter();
   const [sidebarOpen, setSidebarOpen] = useState(true);
 
-  // persist recentApplications and guard
-  const [recentApplicationsState, setRecentApplicationsState] = useState(() => {
-    try {
-      if (typeof window !== 'undefined') {
-        const raw = localStorage.getItem('admin.recentApplications');
-        if (raw) return JSON.parse(raw);
-      }
-    } catch (e) {}
-    return defaultRecent;
-  });
+  const [recentApplicationsState, setRecentApplicationsState] = useState<typeof defaultRecent>(defaultRecent);
 
   useEffect(() => {
-    try {
-      localStorage.setItem('admin.recentApplications', JSON.stringify(recentApplicationsState));
-    } catch (e) {}
-  }, [recentApplicationsState]);
+    async function load() {
+      try {
+        const res = await fetch('/api/admin/applications');
+        if (res.ok) {
+          const json = await res.json();
+          setRecentApplicationsState(json.data || []);
+        }
+      } catch (e) {
+        console.error('[v0] load admin applications failed', e);
+      }
+    }
+    load();
+  }, []);
+
+  const handleDelete = async (id: number) => {
+    if (!confirm('Delete this application?')) return;
+    const res = await fetch(`/api/admin/applications/${id}`, { method: 'DELETE' });
+    if (res.ok) {
+      setRecentApplicationsState(prev => prev.filter(p => p.id !== id));
+    } else {
+      alert('Failed to delete application');
+    }
+  };
+
+  const handleApprove = async (id: number) => {
+    const res = await fetch(`/api/admin/applications/${id}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ status: 'approved' }),
+    });
+    if (res.ok) {
+      const json = await res.json();
+      setRecentApplicationsState(prev => prev.map(p => (p.id === id ? json.data : p)));
+    } else {
+      alert('Failed to approve application');
+    }
+  };
 
   useEffect(() => {
     const role = typeof window !== 'undefined' ? localStorage.getItem('role') : null;
@@ -341,8 +365,20 @@ export default function AdminDashboard() {
                       </td>
                       <td className="py-4 px-4 text-right">
                         <div className="flex gap-2 justify-end">
-                          <Button size="sm" onClick={() => alert(`Viewing application ${app.id}`)}>View</Button>
-                          <Button size="sm" variant="destructive" onClick={() => setRecentApplicationsState(prev => prev.filter(p => p.id !== app.id))}>Delete</Button>
+                          {app.status === 'pending' && (
+                            <Button size="sm" onClick={async () => handleApprove(app.id)}>Approve</Button>
+                          )}
+                          <Button size="sm" onClick={async () => {
+                            try {
+                              const res = await fetch(`/api/admin/applications/${app.id}`);
+                              if (!res.ok) throw new Error('Failed');
+                              const json = await res.json();
+                              alert(JSON.stringify(json.data, null, 2));
+                            } catch (e) {
+                              alert('Failed to fetch application');
+                            }
+                          }}>View</Button>
+                          <Button size="sm" variant="destructive" onClick={async () => handleDelete(app.id)}>Delete</Button>
                         </div>
                       </td>
                     </tr>

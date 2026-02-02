@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Button } from '@/components/ui/button';
@@ -9,10 +10,7 @@ import { Badge } from '@/components/ui/badge';
 import { BookOpen, Calendar, Upload, Users } from 'lucide-react';
 
 export default function LecturerDashboard() {
-  const [courses] = useState([
-    { id: 'C-101', title: 'Nursing Science', students: 48 },
-    { id: 'C-202', title: 'Health Information Management', students: 36 },
-  ]);
+  const [courses, setCourses] = useState<{ id: string; title: string }[]>([]);
 
   const [upcomingClasses] = useState([
     { id: 1, course: 'Nursing Science', date: '2026-02-03', time: '10:00' },
@@ -29,33 +27,30 @@ export default function LecturerDashboard() {
     return 'C-101';
   });
 
-  const [rosters] = useState<Record<string, any[]>>({
-    'C-101': [
-      { id: 1, name: 'Alice Johnson', matric: 'MUN/1001', grade: null },
-      { id: 2, name: 'Bob Smith', matric: 'MUN/1002', grade: 75 },
-    ],
-    'C-202': [
-      { id: 3, name: 'Carol White', matric: 'MUN/2001', grade: null },
-    ],
-  });
+  const [studentRoster, setStudentRoster] = useState<any[]>([]);
 
-  const [studentRoster, setStudentRoster] = useState(() => {
-    try {
-      if (typeof window !== 'undefined') {
-        const raw = localStorage.getItem('lecturer.roster.' + selectedCourse);
-        if (raw) return JSON.parse(raw);
-      }
-    } catch (e) {}
-    return rosters[selectedCourse];
-  });
-
-  // persist changes to roster and selected course
+  // persist selected course only
   useEffect(() => {
     try {
       localStorage.setItem('lecturer.selectedCourse', selectedCourse);
-      localStorage.setItem('lecturer.roster.' + selectedCourse, JSON.stringify(studentRoster));
     } catch (e) {}
-  }, [selectedCourse, studentRoster]);
+  }, [selectedCourse]);
+
+  useEffect(() => {
+    async function load() {
+      try {
+        const res = await fetch(`/api/lecturer/roster?courseId=${selectedCourse}`);
+        if (res.ok) {
+          const json = await res.json();
+          setCourses(json.courses || []);
+          setStudentRoster(json.roster || []);
+        }
+      } catch (e) {
+        console.error('[v0] load roster failed', e);
+      }
+    }
+    load();
+  }, [selectedCourse]);
 
   // guard
   const router = useRouter();
@@ -81,9 +76,18 @@ export default function LecturerDashboard() {
     const file = e.target.files?.[0];
     if (!file) return;
     setUploading(true);
-    await new Promise((r) => setTimeout(r, 1000));
-    setUploading(false);
-    alert(`Uploaded ${file.name} (mock)`);
+    try {
+      const form = new FormData();
+      form.append('file', file);
+      const res = await fetch('/api/lecturer/upload', { method: 'POST', body: form });
+      setUploading(false);
+      const json = await res.json();
+      if (res.ok) alert(`Uploaded: ${json.url}`);
+      else alert('Upload failed');
+    } catch (e) {
+      setUploading(false);
+      alert('Upload failed');
+    }
   };
 
   const handleLogout = () => {
@@ -101,7 +105,7 @@ export default function LecturerDashboard() {
         <div className="flex items-center justify-between h-16 px-6">
           <div className="flex items-center gap-4">
             <Link href="/lecturer/dashboard" className="flex items-center gap-2">
-              <img src="/logo.png" alt="Munau College Logo" width={36} height={36} className="rounded-lg object-cover" />
+              <Image src="/logo.png" alt="Munau College Logo" width={36} height={36} className="rounded-lg object-cover" />
               <span className="font-bold">Lecturer Panel</span>
             </Link>
           </div>
@@ -161,7 +165,23 @@ export default function LecturerDashboard() {
                         <input type="number" value={s.grade ?? ''} onChange={(e) => updateGrade(s.id, e.target.value ? Number(e.target.value) : null)} className="w-20 rounded-md border px-2 py-1 text-right" />
                       </td>
                       <td className="py-3 px-4 text-right">
-                        <Button size="sm" onClick={() => alert(`Saved grade for ${s.name}: ${s.grade ?? 'N/A'}`)}>Save</Button>
+                        <Button size="sm" onClick={async () => {
+                        try {
+                          const res = await fetch('/api/lecturer/roster', {
+                            method: 'PATCH',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ courseId: selectedCourse, studentId: s.id, grade: s.grade })
+                          });
+                          if (res.ok) {
+                            const json = await res.json();
+                            alert(`Saved grade for ${s.name}: ${json.data.grade}`);
+                          } else {
+                            alert('Failed to save grade');
+                          }
+                        } catch (e) {
+                          alert('Failed to save grade');
+                        }
+                      }}>Save</Button>
                       </td>
                     </tr>
                   ))}
