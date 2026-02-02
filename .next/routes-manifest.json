@@ -1,0 +1,225 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/api/admin/admissions/[applicationId]",
+      "regex": "^/api/admin/admissions/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPapplicationId": "nxtPapplicationId"
+      },
+      "namedRegex": "^/api/admin/admissions/(?<nxtPapplicationId>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/admin/applications/[id]",
+      "regex": "^/api/admin/applications/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/admin/applications/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/admin/students/[id]",
+      "regex": "^/api/admin/students/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/admin/students/(?<nxtPid>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/admin/admissions",
+      "regex": "^/admin/admissions(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/admissions(?:/)?$"
+    },
+    {
+      "page": "/admin/dashboard",
+      "regex": "^/admin/dashboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/dashboard(?:/)?$"
+    },
+    {
+      "page": "/admin/finance",
+      "regex": "^/admin/finance(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/finance(?:/)?$"
+    },
+    {
+      "page": "/admin/students",
+      "regex": "^/admin/students(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/students(?:/)?$"
+    },
+    {
+      "page": "/admission/apply",
+      "regex": "^/admission/apply(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admission/apply(?:/)?$"
+    },
+    {
+      "page": "/api/admin/admissions",
+      "regex": "^/api/admin/admissions(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/admissions(?:/)?$"
+    },
+    {
+      "page": "/api/admin/applications",
+      "regex": "^/api/admin/applications(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/applications(?:/)?$"
+    },
+    {
+      "page": "/api/admin/finance",
+      "regex": "^/api/admin/finance(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/finance(?:/)?$"
+    },
+    {
+      "page": "/api/admin/students",
+      "regex": "^/api/admin/students(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/students(?:/)?$"
+    },
+    {
+      "page": "/api/admissions/create",
+      "regex": "^/api/admissions/create(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admissions/create(?:/)?$"
+    },
+    {
+      "page": "/api/auth/register",
+      "regex": "^/api/auth/register(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/auth/register(?:/)?$"
+    },
+    {
+      "page": "/api/examiner/marking-queue",
+      "regex": "^/api/examiner/marking\\-queue(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/examiner/marking\\-queue(?:/)?$"
+    },
+    {
+      "page": "/api/lecturer/roster",
+      "regex": "^/api/lecturer/roster(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/lecturer/roster(?:/)?$"
+    },
+    {
+      "page": "/api/lecturer/upload",
+      "regex": "^/api/lecturer/upload(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/lecturer/upload(?:/)?$"
+    },
+    {
+      "page": "/api/student/dashboard/initialize",
+      "regex": "^/api/student/dashboard/initialize(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/student/dashboard/initialize(?:/)?$"
+    },
+    {
+      "page": "/auth/login",
+      "regex": "^/auth/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/auth/login(?:/)?$"
+    },
+    {
+      "page": "/examiner/dashboard",
+      "regex": "^/examiner/dashboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/examiner/dashboard(?:/)?$"
+    },
+    {
+      "page": "/lecturer/dashboard",
+      "regex": "^/lecturer/dashboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/lecturer/dashboard(?:/)?$"
+    },
+    {
+      "page": "/student/courses",
+      "regex": "^/student/courses(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/student/courses(?:/)?$"
+    },
+    {
+      "page": "/student/dashboard",
+      "regex": "^/student/dashboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/student/dashboard(?:/)?$"
+    },
+    {
+      "page": "/student/fees",
+      "regex": "^/student/fees(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/student/fees(?:/)?$"
+    },
+    {
+      "page": "/student/profile",
+      "regex": "^/student/profile(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/student/profile(?:/)?$"
+    },
+    {
+      "page": "/student/timetable",
+      "regex": "^/student/timetable(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/student/timetable(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

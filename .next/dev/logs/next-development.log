@@ -1,0 +1,799 @@
+[00:00:05.218] Server  LOG      ✓ Ready in 3.8s
+[00:00:11.634] Server  LOG      ○ Compiling / ...
+[00:00:26.537] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:28.216] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:28.216] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:28.217] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770040696951}
+[00:00:55.639] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/auth/login color: rgb(120, 120, 120) color: inherit {"dp":"/auth/login","o":"http://localhost:3000/auth/login","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770040724583}
+[00:01:02.206] Server  LOG      ○ Compiling /admin/dashboard ...
+[00:01:22.183] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/admin/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/admin/dashboard","o":"http://localhost:3000/admin/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1770040750760}
+[00:01:25.704] Server  ERROR    ⨯ ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:01:25.873] Server  LOG      ○ Compiling /api/admin/applications ...
+[00:01:31.639] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:01:32.721] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:01:35.383] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:01:35.383] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:01:35.383] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:01:35.383] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:01:35.614] Server  ERROR    ⨯ ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:01:35.847] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:01:37.996] Browser ERROR   uncaughtError: Error: ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:01:38.217] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:01:38.649] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:01:38.649] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:01:39.607] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:01:40.785] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:01:40.930] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:01:44.214] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:01:50.559] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:02:20.269] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:02:20.269] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:02:24.599] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:02:24.599] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:02:24.599] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:02:24.599] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:02:27.843] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:02:28.261] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:02:28.261] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:02:30.228] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:02:31.214] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:02:33.907] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:02:43.402] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:02:43.402] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:02:55.943] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:02:58.212] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:03:27.212] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:01.213] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:11.334] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:32.212] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:32.212] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:32.212] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:32.212] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:42.631] Browser ERROR   uncaughtError: Error: ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:42.748] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:43.113] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:47.643] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:49.492] Browser ERROR   uncaughtError: Error: ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:49.601] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:49.992] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:53.335] Browser ERROR   uncaughtError: Error: ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:04:53.463] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:04:53.571] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:05:06.748] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:05:21.937] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:05:21.937] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:05:22.215] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:05:24.225] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:05:52.708] Browser ERROR   uncaughtError: Error: ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:05:52.855] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:05:52.959] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:07:08.213] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:07:26.213] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:07:26.213] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:07:26.213] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
+[00:08:51.212] Browser ERROR   ./app/api/admin/applications/route.ts:2:1
+Module not found: Can't resolve '@/lib/file-store'
+  1 | import { NextRequest, NextResponse } from 'next/server'
+> 2 | import { readJsonFile, writeJsonFile } from '@/lib/file-store'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | const FILENAME = 'admin.json'
+  5 |
+
+Import map: aliased to relative './lib/file-store' inside of [project]/
+
+https://nextjs.org/docs/messages/module-not-found
