@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "studentId": 1001,
+    "description": "Tuition - 2025/2026",
+    "amount": 500000,
+    "paid": 200000,
+    "outstanding": 300000,
+    "dueDate": "2026-02-28",
+    "status": "partial"
+  },
+  {
+    "id": 2,
+    "studentId": 1002,
+    "description": "Accommodation - 2025/2026",
+    "amount": 200000,
+    "paid": 0,
+    "outstanding": 200000,
+    "dueDate": "2026-03-15",
+    "status": "pending"
+  }
+]

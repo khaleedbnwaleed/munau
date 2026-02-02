@@ -1,0 +1,22 @@
+[
+  {
+    "applicationId": "APP-2024-1693460000000-0001",
+    "studentId": "MN/2024/00001",
+    "firstName": "Alice",
+    "lastName": "Johnson",
+    "email": "alice.johnson@example.edu",
+    "program": "Nursing",
+    "status": "pending",
+    "submittedDate": "2026-01-10"
+  },
+  {
+    "applicationId": "APP-2024-1693460000000-0002",
+    "studentId": "MN/2024/00002",
+    "firstName": "Bob",
+    "lastName": "Smith",
+    "email": "bob.smith@example.edu",
+    "program": "Medical Lab Science",
+    "status": "approved",
+    "submittedDate": "2026-01-08"
+  }
+]
