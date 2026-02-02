@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1001,
+    "matric": "MUN/1001",
+    "name": "Alice Johnson",
+    "email": "alice.johnson@example.edu",
+    "program": "Nursing",
+    "level": "ND II",
+    "status": "active",
+    "admissionDate": "2024-09-01"
+  },
+  {
+    "id": 1002,
+    "matric": "MUN/1002",
+    "name": "Bob Smith",
+    "email": "bob.smith@example.edu",
+    "program": "Medical Lab Science",
+    "level": "ND I",
+    "status": "active",
+    "admissionDate": "2025-01-15"
+  },
+  {
+    "id": 1003,
+    "matric": "MUN/1003",
+    "name": "Carol White",
+    "email": "carol.white@example.edu",
+    "program": "Health Records",
+    "level": "ND II",
+    "status": "suspended",
+    "admissionDate": "2023-09-01"
+  }
+]
