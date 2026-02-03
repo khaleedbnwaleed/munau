@@ -120,14 +120,14 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative py-20 md:py-32 bg-cover bg-center">
-        <Image src="/hero.png" alt="Hero background" fill className="absolute inset-0 -z-20 object-cover" priority />
+        <Image src="/hero.png" alt="Hero background" fill className="absolute inset-0 z-0 object-cover" priority />
         {/* Overlay */}
-        <div className="absolute inset-0 -z-10">
-          {/* Darker overlay for better contrast */}
-          <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/60 to-black/70" />
+        <div className="absolute inset-0 z-10">
+          {/* Darker overlay for better contrast (reduced opacity so background image is visible) */}
+          <div className="absolute inset-0 bg-gradient-to-br from-black/30 via-black/20 to-black/30" />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-white">
             {/* improved contrast */}
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-balance text-white drop-shadow-2xl bg-black/40 px-4 py-2 rounded-md inline-block">
